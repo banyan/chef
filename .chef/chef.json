@@ -1,5 +1,6 @@
 {
   "run_list" : [
+    "recipe[build-essential]",
     "recipe[git]",
     "recipe[utility]",
     "recipe[tmux]",
