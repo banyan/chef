@@ -1,0 +1,5 @@
+.bundle
+tmp
+.rsync_cache
+*.tmproj
+.rake_test_cache
