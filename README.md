@@ -1,1 +1,1 @@
-# my miiiiiinnnnnnnnnuuuummmmmmmmmmmmmmmm chef-solo
+# my minimum chef-solo
