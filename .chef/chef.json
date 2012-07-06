@@ -2,6 +2,7 @@
   "run_list" : [
     "recipe[git]",
     "recipe[utility]",
+    "recipe[tmux]",
     "recipe[zsh]"
   ]
 }
