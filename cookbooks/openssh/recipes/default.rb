@@ -25,6 +25,7 @@ template "/etc/ssh/sshd_config" do
   group  "root"
   mode   0644
   source name
+  notifies :reload, "service[ssh]", :immediately
 end
 
 service "ssh" do
