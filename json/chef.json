@@ -3,6 +3,7 @@
     "recipe[build-essential]",
     "recipe[xmllibs]",
     "recipe[openssh]",
+    "recipe[ufw]",
     "recipe[git]",
     "recipe[utility]",
     "recipe[tmux]",
@@ -10,4 +11,3 @@
     "recipe[vim]"
   ]
 }
-
