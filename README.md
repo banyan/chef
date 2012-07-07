@@ -11,12 +11,20 @@ $ sudo gem install bundler
 ```
 
 ## Setup
-
 ```
 $ git clone git@github.com:banyan/chef.git
 $ cd ~/chef
 $ bundle install --path .bundle/gems
 ```
+
+### Run Chef
+```
+$ sudo ln -s /path/to/chef /root/chef # execute as root
+# pwd
+/root/chef
+# bundle exec chef-solo -c config/solo.rb -j json/chef.json
+```
+
 ## Create Cookbooks
 
 ### Generate Cookbook Template
@@ -36,13 +44,10 @@ $ vi .chef/chef.json
     "recipe[utility]",
     ...
 ```
-### Run Chef
-```
-$ sudo ln -s /path/to/chef /root/chef # execute as root
-# pwd
-/root/chef
-# bundle exec chef-solo -c config/solo.rb -j json/chef.json
-```
+
+## Note
+
+* default ssh port will be changed from 22 to 10022 (22 will be shutdown)
 
 ## License
 
