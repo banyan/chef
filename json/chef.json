@@ -1,6 +1,7 @@
 {
   "run_list" : [
     "recipe[build-essential]",
+    "recipe[xmllibs]",
     "recipe[openssh]",
     "recipe[git]",
     "recipe[utility]",
