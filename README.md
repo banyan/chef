@@ -14,7 +14,7 @@ $ sudo bundle exec chef-solo --config .chef/solo.rb --json .chef/chef.json
 ### Generate Cookbook Template
 ```
 $ cd ~/chef
-$ bundle exec knife cookbook create <NEW_COOKBOOK_NAME> --cookbook-path cookbooks 
+$ bundle exec knife cookbook create <NEW_COOKBOOK_NAME> --cookbook-path cookbooks
 ```
 
 ### Add Recipe
@@ -34,3 +34,8 @@ $ vi .chef/chef.json
 /root/chef
 # bundle exec chef-solo -c config/solo.rb -j json/chef.json
 ```
+
+## License
+
+* The MIT License (MIT)
+* Copyright (c) 2012- Kohei Hasegawa
