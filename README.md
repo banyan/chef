@@ -27,3 +27,9 @@ $ vi .chef/chef.json
     "recipe[utility]",
     ...
 ```
+### Run Chef
+```
+# pwd
+/root/chef
+# bundle exec chef-solo -c config/solo.rb -j json/chef.json
+```
