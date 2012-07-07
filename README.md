@@ -1,13 +1,21 @@
 # My Chef recipes, cookbooks, etc.
 ![image](http://banyan.github.com/images/han_solo.jpg)
 
+## Install Ruby & Git for chef-solo
+
+### Ubuntu
+```
+$ sudo apt-get update
+$ sudo aptitude install ruby1.9.1-dev git build-essential
+$ sudo gem install bundler
+```
+
 ## Setup
 
 ```
 $ git clone git@github.com:banyan/chef.git
 $ cd ~/chef
 $ bundle install --path .bundle/gems
-$ sudo bundle exec chef-solo --config .chef/solo.rb --json .chef/chef.json
 ```
 ## Create Cookbooks
 
@@ -30,6 +38,7 @@ $ vi .chef/chef.json
 ```
 ### Run Chef
 ```
+$ sudo ln -s /path/to/chef /root/chef # execute as root
 # pwd
 /root/chef
 # bundle exec chef-solo -c config/solo.rb -j json/chef.json
