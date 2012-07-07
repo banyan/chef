@@ -1,4 +1,4 @@
-# chef-solo
+# My Chef recipes, cookbooks, etc.
 ![image](http://banyan.github.com/images/han_solo.jpg)
 
 ## Setup
