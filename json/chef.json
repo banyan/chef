@@ -14,6 +14,7 @@
     "recipe[language-pack-ja]",
     "recipe[ntp]",
     "recipe[nmap]",
-    "recipe[wget]"
+    "recipe[wget]",
+    "recipe[git-flow]"
   ]
 }
