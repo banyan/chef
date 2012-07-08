@@ -1,0 +1,6 @@
+{
+  "run_list" : [
+    "role[base]",
+    "role[ruby_app]"
+  ]
+}
