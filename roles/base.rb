@@ -15,5 +15,6 @@ run_list(
   "recipe[nmap]",
   "recipe[wget]",
   "recipe[tig]",
-  "recipe[git-flow]"
+  "recipe[git-flow]",
+  "recipe[ack-grep]"
 )
