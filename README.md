@@ -22,7 +22,7 @@ $ bundle install --path .bundle/gems
 $ sudo ln -s /path/to/chef /root/chef # execute as root
 # pwd
 /root/chef
-# bundle exec chef-solo -c config/solo.rb -j json/chef.json
+# bundle exec chef-solo -c config/solo.rb -j json/secure_ruby_app.json # choose proper json
 ```
 
 ## Create Cookbooks
