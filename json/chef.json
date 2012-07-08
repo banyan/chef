@@ -8,6 +8,13 @@
     "recipe[utility]",
     "recipe[tmux]",
     "recipe[zsh]",
-    "recipe[vim]"
+    "recipe[vim]",
+    "recipe[tree]",
+    "recipe[trash-cli]",
+    "recipe[sysv-rc-conf]",
+    "recipe[language-pack-ja]",
+    "recipe[ntp]",
+    "recipe[nmap]",
+    "recipe[wget]",
   ]
 }
