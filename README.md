@@ -12,7 +12,7 @@ $ sudo gem install bundler
 
 ## Setup
 ```
-$ git clone git@github.com:banyan/chef.git
+$ git clone --recurse-submodules git@github.com:banyan/chef.git
 $ cd ~/chef
 $ bundle install --path .bundle/gems
 ```
