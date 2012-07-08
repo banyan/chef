@@ -5,7 +5,6 @@
     "recipe[openssh]",
     "recipe[ufw]",
     "recipe[git]",
-    "recipe[utility]",
     "recipe[tmux]",
     "recipe[zsh]",
     "recipe[vim]",
