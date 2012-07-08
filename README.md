@@ -41,19 +41,21 @@ $ chef-cooker NEW_COOKBOOK_NAME
 
 ### Add Recipe
 ```
-$ vi .chef/chef.json
+$ vi role/PROPER_ROLE.rb
 
 {
   "run_list" : [
     "recipe[NEW_COOKBOOK_NAME]", # add cookbook name
     "recipe[git]",
-    "recipe[utility]",
+    "recipe[tig]",
     ...
 ```
 
 ## Note
 
-* default ssh port will be changed from 22 to 10022 (22 will be shutdown)
+* When use secure role,
+  * default ssh port will be changed from 22 to 10022 (22 will be shutdown)
+  * Don't forget to change Security Group when using EC2.
 
 ## License
 
