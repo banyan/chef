@@ -30,7 +30,13 @@ $ sudo ln -s /path/to/chef /root/chef # execute as root
 ### Generate Cookbook Template
 ```
 $ cd ~/chef
-$ bundle exec knife cookbook create <NEW_COOKBOOK_NAME> --cookbook-path cookbooks
+$ bundle exec knife cookbook create NEW_COOKBOOK_NAME --cookbook-path cookbooks
+```
+
+or Use my tiny wrapper - [chef-cooker](https://github.com/banyan/chef-cooker)
+```
+$ sudo gem install chef-cooker
+$ chef-cooker NEW_COOKBOOK_NAME
 ```
 
 ### Add Recipe
