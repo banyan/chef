@@ -15,6 +15,7 @@
     "recipe[ntp]",
     "recipe[nmap]",
     "recipe[wget]",
+    "recipe[tig]",
     "recipe[git-flow]"
   ]
 }
