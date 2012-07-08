@@ -43,11 +43,10 @@ $ chef-cooker NEW_COOKBOOK_NAME
 ```
 $ vi role/PROPER_ROLE.rb
 
-{
-  "run_list" : [
-    "recipe[NEW_COOKBOOK_NAME]", # add cookbook name
-    "recipe[git]",
-    "recipe[tig]",
+run_list(
+  "recipe[NEW_COOKBOOK_NAME]", # add cookbook name
+  "recipe[xmllibs]",
+  "recipe[git]",
     ...
 ```
 
