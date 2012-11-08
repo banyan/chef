@@ -7,4 +7,16 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package "rbenv-sudo"
+directory "/usr/local/rbenv/plugins" do
+  owner "root"
+  group "root"
+  mode "0755"
+  action :create
+end
+
+
+git "/usr/local/rbenv/plugins/rbenv-sudo" do
+  repository "git://github.com/dcarley/rbenv-sudo.git"
+  reference "master"
+  action :sync
+end

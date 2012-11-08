@@ -2,7 +2,8 @@ name "ruby_app"
 description "Ruby app role."
 run_list(
   "recipe[ruby_build]",
-  "recipe[rbenv::system]"
+  "recipe[rbenv::system]",
+  "recipe[rbenv-sudo]"
 )
 default_attributes(
   "rbenv" => {
