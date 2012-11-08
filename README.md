@@ -25,6 +25,16 @@ $ sudo ln -s /path/to/chef /root/chef # execute as root
 # bundle exec chef-solo -c config/solo.rb -j json/secure_ruby_app.json # choose proper json
 ```
 
+### Run Chef as normal user
+
+* Using [rbenv-sudo](https://github.com/dcarley/rbenv-sudo)
+
+```
+$ pwd
+/home/banyan/chef
+$ rbenv sudo bundle exec chef-solo -c config/solo.rb -j json/secure_ruby_app.json # choose proper json
+```
+
 ## Create Cookbooks
 
 ### Generate Cookbook Template
