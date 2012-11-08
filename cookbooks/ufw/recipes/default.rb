@@ -6,10 +6,25 @@
 #
 # All rights reserved - Do Not Redistribute
 
-include_recipe "apt"
-
 package "ufw" do
   action :upgrade
+end
+
+service "ufw" do
+  enabled true
+  running true
+  supports :status => true, :restart => true, :reload => true
+  action [:enable, :start]
+end
+
+%w(80 443 6380 10022).each do |allow|
+  execute "allow #{allow}" do
+    command "ufw allow #{allow}"
+  end
+end
+
+execute "deny 22" do
+  command "ufw deny 22"
 end
 
 execute "enable UFW" do
