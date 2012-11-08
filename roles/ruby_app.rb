@@ -7,7 +7,9 @@ run_list(
 default_attributes(
   "rbenv" => {
     "rubies" => [
-      "1.9.3-p125"
+      "1.9.3-p125",
+      "1.9.3-p286",
+      "2.0.0-dev"
     ]
   }
 )
