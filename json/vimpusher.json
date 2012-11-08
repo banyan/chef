@@ -1,0 +1,8 @@
+{
+  "run_list" : [
+    "role[base]",
+    "role[secure]",
+	"role[ruby_app]",
+    "role[redis-server]"
+  ]
+}
